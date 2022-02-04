@@ -177,19 +177,19 @@ class MobileFooter extends StatelessWidget {
             alignment: WrapAlignment.center,
             children: <Widget>[
               NavItem(
-                title: 'Twitter',
+                title: 'Privacy Policy',
                 tapEvent: () {},
               ),
               NavItem(
-                title: 'Facebook',
+                title: 'Term & condition',
                 tapEvent: () {},
               ),
               NavItem(
-                title: 'Linkedin',
+                title: 'Help & support',
                 tapEvent: () {},
               ),
               NavItem(
-                title: 'Instagram',
+                title: 'Contact Us',
                 tapEvent: () {},
               ),
             ],
@@ -249,7 +249,7 @@ class NavItem extends StatelessWidget {
           title,
           style: TextStyle(
                 color: Colors.grey,
-              fontSize: 16),
+              fontSize: 12),
         ),
       ),
     );

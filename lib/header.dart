@@ -69,7 +69,10 @@ class Header extends StatelessWidget {
                       borderRadius: BorderRadius.all(
                     Radius.circular(5.0),
                   )),
-                  onPressed: () {},
+                  onPressed: () {
+
+                    
+                  },
                   child: const Text(
                     "SignUp",
                     style: TextStyle(color: Colors.white),

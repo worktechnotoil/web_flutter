@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_webpage/custom_icon_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -49,8 +50,7 @@ class LandingPage extends StatelessWidget {
               height: 5,
             ),
             Container(
-              // margin: const EdgeInsets.all(15.0),
-              // padding: const EdgeInsets.all(3.0),
+              padding: const EdgeInsets.all(3.0),
               decoration:
                   BoxDecoration(border: Border.all(color: Colors.blueAccent)),
               child: TextField(
@@ -64,83 +64,92 @@ class LandingPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 16,
             ),
+           
+              Container(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      "popular:",
+                      style: TextStyle(fontSize: 12.0, color: Colors.grey),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      height: 20,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                          width: 0.5,
+                        ),
+                      ),
+                      child: Center(
+                          child: Text("sabnam mahammad",
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.grey))),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      height: 16,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                          width: 0.5,
+                        ),
+                      ),
+                      child: Center(
+                          child: Text("Leardership",
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.grey))),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      height: 16,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                          width: 0.5,
+                        ),
+                      ),
+                      child: Center(
+                          child: Text("Team Building",
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.grey))),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      height: 16,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                          width: 0.5,
+                        ),
+                      ),
+                      child: Center(
+                          child: Text("Rect js",
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.grey))),
+                    )
+                  ],
+                ),
+              ),
+            
             Row(
               children: [
-                Text(
-                  "popular:",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14.0,
-                      color: Colors.grey),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
                 Container(
-                  height: 20,
                   decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
-                      width: 1,
-                    ),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Center(
-                      child: Text("sabnam mahammad",
-                          style: TextStyle(fontSize: 14, color: Colors.grey))),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Container(
-                  height: 20,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
-                      width: 1,
-                    ),
-                  ),
-                  child: Center(
-                      child: Text("Leardership",
-                          style: TextStyle(fontSize: 14, color: Colors.grey))),
-                ),
-                SizedBox(
-                  width: 2,
-                ),
-                // Container(
-                //   height: 20,
-                //   decoration: BoxDecoration(
-                //     border: Border.all(
-                //       color: Colors.grey,
-                //       width: 1,
-                //     ),
-                //   ),
-                //   child: Center(
-                //       child: Text("Team Building",
-                //           style: TextStyle(fontSize: 14, color: Colors.grey))),
-                // ),
-                // SizedBox(
-                //   width: 15,
-                // ),
-                // Container(
-                //   height: 20,
-                //   decoration: BoxDecoration(
-                //     border: Border.all(
-                //       color: Colors.grey,
-                //       width: 1,
-                //     ),
-                //   ),
-                //   child: Center(
-                //       child: Text("Rect js",
-                //           style: TextStyle(fontSize: 14, color: Colors.grey))),
-                // )
-              ],
-            ),
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(),
                   child: const CustomIconButton(
                     iconData: FontAwesomeIcons.googlePlay,
                     url: 'https://www.facebook.com/login/',
@@ -154,8 +163,15 @@ class LandingPage extends StatelessWidget {
                       'https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/linking-a-repository-to-a-project-board',
                   color: Colors.grey,
                 ),
+                SizedBox(
+                  height: 20,
+                ),
               ],
-            )
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Text('Our World Class Experts'),
+            ),
           ],
         ),
       ),
