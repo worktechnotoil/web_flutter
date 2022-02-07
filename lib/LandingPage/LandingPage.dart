@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:flutter_webpage/custom_icon_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -49,16 +50,34 @@ class LandingPage extends StatelessWidget {
             SizedBox(
               height: 5,
             ),
-            Container(
-              padding: const EdgeInsets.all(3.0),
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.blueAccent)),
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: 'Search by name and Expertise',
-                  suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.search),
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Search",
+                // fillColor: secondaryColor,
+                filled: true,
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(width: 1),
+                  borderRadius: const BorderRadius.all(Radius.circular(10)),
+                ),
+                suffixIcon: InkWell(
+                  onTap: () {},
+                  child: Container(
+                    
+                     padding: EdgeInsets.all( 5),
+                    // margin: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    ),
+                    // child: SvgPicture.asset("assets/icons/Search.svg"),
+                    child: IconButton(
+                      onPressed: (){},
+                      icon: Icon(
+                        Icons.search,
+                      ),
+                      iconSize: 16,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
@@ -66,84 +85,82 @@ class LandingPage extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
-           
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(
-                      "popular:",
-                      style: TextStyle(fontSize: 12.0, color: Colors.grey),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      height: 20,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 0.5,
-                        ),
+            Container(
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    "popular:",
+                    style: TextStyle(fontSize: 12.0, color: Colors.grey),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 20,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 0.5,
                       ),
-                      child: Center(
-                          child: Text("sabnam mahammad",
-                              style:
-                                  TextStyle(fontSize: 12, color: Colors.grey))),
                     ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      height: 16,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 0.5,
-                        ),
+                    child: Center(
+                        child: Text("sabnam mahammad",
+                            style:
+                                TextStyle(fontSize: 12, color: Colors.grey))),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 16,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 0.5,
                       ),
-                      child: Center(
-                          child: Text("Leardership",
-                              style:
-                                  TextStyle(fontSize: 12, color: Colors.grey))),
                     ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      height: 16,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 0.5,
-                        ),
+                    child: Center(
+                        child: Text("Leardership",
+                            style:
+                                TextStyle(fontSize: 12, color: Colors.grey))),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 16,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 0.5,
                       ),
-                      child: Center(
-                          child: Text("Team Building",
-                              style:
-                                  TextStyle(fontSize: 12, color: Colors.grey))),
                     ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      height: 16,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 0.5,
-                        ),
+                    child: Center(
+                        child: Text("Team Building",
+                            style:
+                                TextStyle(fontSize: 12, color: Colors.grey))),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 16,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 0.5,
                       ),
-                      child: Center(
-                          child: Text("Rect js",
-                              style:
-                                  TextStyle(fontSize: 12, color: Colors.grey))),
-                    )
-                  ],
-                ),
+                    ),
+                    child: Center(
+                        child: Text("Rect js",
+                            style:
+                                TextStyle(fontSize: 12, color: Colors.grey))),
+                  )
+                ],
               ),
-            
+            ),
             Row(
               children: [
                 Container(
